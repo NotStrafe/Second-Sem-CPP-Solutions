@@ -5,7 +5,7 @@ int Sum(int a, int b) {
         return INT_MAX;
     }
 
-    if ((a == INT_MIN && b <= 0) || (b == INT_MIN && a <= 0)) {
+    if ((a == INT_MIN && b < 0) || (b == INT_MIN && a < 0)) {
         return INT_MIN;
     }
 
